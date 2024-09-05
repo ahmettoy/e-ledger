@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Defter XML Parser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>E-Defter XML Parser</h1>
+
+        <!-- File upload -->
+        <div class="upload-section">
+            <input type="file" id="zipUpload" accept=".zip" />
+            <div class="progress-bar">
+                <div class="progress-bar-fill" id="progressFill"></div>
+            </div>
+            <button onclick="handleUpload()">XML Yükle</button>
+        </div>
+
+        <!-- Tag selection progress -->
+        <div class="progress-bar">
+            <div class="progress-bar-fill" id="tagProgressFill"></div>
+        </div>
+
+        <!-- Tag selection -->
+        <div class="search-section">
+            <label for="tagSelect">Tag seçiniz:</label>
+            <select id="tagSelect">
+                <option value="">örn: documentNumber</option>
+            </select>
+            <button onclick="performSearch()">Tara</button>
+        </div>
+
+        <!-- Results -->
+        <div id="results"></div>
+    </div>
+
+    <!-- Include JSZip -->
+    <script src="https://cdn.jsdelivr.net/npm/jszip@3.7.1/dist/jszip.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
