@@ -83,7 +83,7 @@ select {
 .progress-bar-fill {
     width: 0;
     height: 15px;
-    background-color: #666;
+    background-color: #80EF80;
     border-radius: 4px;
     transition: width 0.4s ease;
 }
