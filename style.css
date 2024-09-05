@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.upload-section, .search-section {
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #666;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#results {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#results p {
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.progress-bar-fill {
+    width: 0;
+    height: 15px;
+    background-color: #666;
+    border-radius: 4px;
+    transition: width 0.4s ease;
+}
+
+/* details table */
+.details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.details-table th, .details-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.details-table th {
+    background-color: #f0f0f0;
+}
+
+.detail-div {
+    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.detail-div p {
+    margin-bottom: 5px;
+}
+
+.detail-div hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}
