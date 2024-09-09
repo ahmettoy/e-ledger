@@ -239,6 +239,8 @@ function formatEntryDetail(detail) {
     const accountSubID = getTagContent(detail, 'gl-cor:accountSubID');
     const postingDate = getTagContent(detail, 'gl-cor:postingDate');
     const documentDate = getTagContent(detail, 'gl-cor:documentDate');
+    const documentReference = getTagContent(detail, 'gl-cor:documentReference');
+    const documentType = getTagContent(detail, 'gl-cor:documentType');
     const documentTypeDescription = getTagContent(detail, 'gl-cor:documentTypeDescription');
 
   //currency not used yet
@@ -250,9 +252,11 @@ function formatEntryDetail(detail) {
         <p>Ana Hesap: ${accountMainID}</p>
         <p>Ana Hesap Tanımı: ${accountMainDescription}</p>
         <p>Alt Ana Hesap: ${accountSubID}</p>
+        <p>Referans Alanı: ${documentReference}</p>
         <p>Kayıt Tarihi: ${postingDate}</p>
         <p>Belge Tarihi: ${documentDate}</p>
-        <p>Doküman Tipi: ${documentTypeDescription}</p>
+        <p>Doküman Tipi: ${documentType}</p>
+        <p>Doküman Tipi Açıklama: ${documentTypeDescription}</p>
     `;
 }
 
