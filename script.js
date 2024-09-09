@@ -249,14 +249,14 @@ function formatEntryDetail(detail) {
     const currency = getCurrency(detail);
 
     return `
-        <p>Ana Hesap: ${accountMainID}</p>
-        <p>Ana Hesap Tanımı: ${accountMainDescription}</p>
-        <p>Alt Ana Hesap: ${accountSubID}</p>
-        <p>Referans Alanı: ${documentReference}</p>
-        <p>Kayıt Tarihi: ${postingDate}</p>
-        <p>Belge Tarihi: ${documentDate}</p>
-        <p>Doküman Tipi: ${documentType}</p>
-        <p>Doküman Tipi Açıklama: ${documentTypeDescription}</p>
+        <p><b>Ana Hesap:</b> ${accountMainID}</p>
+        <p><b>Ana Hesap Tanımı:</b> ${accountMainDescription}</p>
+        <p><b>Alt Ana Hesap:</b> ${accountSubID}</p>
+        <p><b>Referans Alanı:</b> ${documentReference}</p>
+        <p><b>Kayıt Tarihi:</b> ${postingDate}</p>
+        <p><b>Belge Tarihi:</b> ${documentDate}</p>
+        <p><b>Doküman Tipi:</b> ${documentType}</p>
+        <p><b>Doküman Tipi Açıklama:</b> ${documentTypeDescription}</p>
     `;
 }
 
