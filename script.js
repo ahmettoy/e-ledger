@@ -175,7 +175,7 @@ function showDetails(filename) {
     // Add rows for each entry with self-closing tags
     Object.keys(selfClosingDetails).forEach(filename => {
         selfClosingDetails[filename].forEach(detail => {
-            const lineNumber = getTagContent(detail, 'gl-cor:lineNumber');
+            const lineNumber = getTagContent(detail, 'gl-cor:lineNumberCounter');
             const tr = document.createElement('tr');
             tr.innerHTML = `<td>${lineNumber}</td><td><button onclick="toggleDetail('${filename}', '${lineNumber}')">Detay</button></td>`;
             tbody.appendChild(tr);
@@ -194,7 +194,7 @@ function toggleDetail(filename, lineNumber) {
     if (!detailDiv) {
         // Create the detail div if it doesn't exist
         const entryDetails = selfClosingDetails[filename].filter(detail =>
-            getTagContent(detail, 'gl-cor:lineNumber') === lineNumber
+            getTagContent(detail, 'gl-cor:lineNumberCounter') === lineNumber
         );
 
         if (entryDetails.length > 0) {
